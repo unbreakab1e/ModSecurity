@@ -1,0 +1,11 @@
+libmodsecurity3 (1.0.0-9369efc-xenial1) xenial; urgency=medium
+
+  * Upstream version bump
+
+ -- Ivan Kukharchuk <ikukharchuk@gmail.com>  Tue, 31 Oct 2017 12:05:24 +0000
+
+libmodsecurity3 (1.0.0-1ubuntu1) trusty; urgency=low
+
+  * Initial Release.
+
+ -- ALinuxNinja <ninja@alinux.ninja>  Wed, 18 May 2016 23:57:39 +0000

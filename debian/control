@@ -1,0 +1,27 @@
+Source: libmodsecurity3
+Priority: optional
+Maintainer: root <ninja@alinux.ninja>
+Build-Depends: debhelper (>= 9.0.0), libtool, automake, autoconf, pkg-config, flex, bison, libgeoip-dev, libcurl4-openssl-dev, libpcre3-dev, libxml2-dev, libyajl-dev, dh-exec
+Standards-Version: 3.9.4
+Section: libs
+Homepage: https://github.com/SpiderLabs/ModSecurity/tree/libmodsecurity
+
+Package: libmodsecurity3-dev
+Section: libdevel
+Architecture: any
+Multi-Arch: allowed
+Depends: libmodsecurity3 (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}
+Description: Libmodsecurity is one component of the ModSecurity v3 project
+ Libmodsecurity is one component of the ModSecurity v3 project. 
+ The library codebase serves as an interface to ModSecurity Connectors taking in web traffic and applying traditional ModSecurity processing. 
+ In general, it provides the capability to load/interpret rules written in the ModSecurity SecRules format and apply them to HTTP content provided by your application via Connectors.
+
+Package: libmodsecurity3
+Section: libs
+Architecture: any
+Multi-Arch: allowed
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Libmodsecurity is one component of the ModSecurity v3 project
+ Libmodsecurity is one component of the ModSecurity v3 project. 
+ The library codebase serves as an interface to ModSecurity Connectors taking in web traffic and applying traditional ModSecurity processing. 
+ In general, it provides the capability to load/interpret rules written in the ModSecurity SecRules format and apply them to HTTP content provided by your application via Connectors.
